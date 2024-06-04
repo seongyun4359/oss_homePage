@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cheon Seong Yun Intro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./portfolio.css">
+  <link rel="icon" type="image/jpg" href="img/star.png">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="./portfolio.js"></script>
+  <script defer src="./guestbook.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../main/home.html" class="logo">SEONGYUN introduction</a>
+    <nav>
+      <ul>
+        <li><a href="../main/home.html">Home🏠</a></li>
+        <li><a href="./portfolio.html">Portfolio📖</a></li>
+        <li><a href="https://github.com/seongyun4359" target="_blank">GitHub💻</a></li>
+        <li><a href="https://lucharomantico.tistory.com/" target="_blank">Blog🖼️</a></li>
+      </ul>
+    </nav>
+    <div class="bar-bg">
+      <span class="bar-ing"></span>
+    </div>
+  </header>
+  <div class="empty1"></div>
+  <section class="top">
+    <article class="top2">
+      <h1 id="portfolio-text">“Future Development PM, <br>This is my record book.”</h1>
+      <div id="portfolio-context"></div>
+    </article>
+  </section>
+  <div class="empty2"></div>
+  <div class="content">
+    <div class="section section-activities">
+      <h2><b>My Activities</b></h2>
+      <ol id="activity-list">
+        <li onclick="showDetails('activity1')">웅진씽크빅 AI 문해력교육서비스 기획캠프 수료(UX 기획)</li>
+        <li onclick="showDetails('activity2')">2024 HCI KOREA 학회 방문</li>
+        <li onclick="showDetails('activity3')">빅데이터 활용 미래 사회문제 해결 아이디어 해커톤 참가: 고령자를 위한 자습어플 </li>
+        <li onclick="showDetails('activity4')">사회문제 해결 해커톤 참가: 생성형 AI 맞춤형 병원 안내 서비스</li>
+        <li onclick="showDetails('activity5')">2024 미래도서관 정책 아이디어 해커톤 대회 참가: 시니어를 위한 폐교활용 도서관</li>
+        <li onclick="showDetails('activity6')">광운대학교 정보융합학부 전공 동아리 CHIC 임원진 (2023.7~)</li>
+        <li onclick="showDetails('activity7')">디랩 프로그래밍 학원 튜터 - 앱인벤터, 로블록스 스튜디오, 파이썬 교육(2023.07~)</li>
+        <li onclick="showDetails('activity8')">소원 소프트웨어 서포터즈 교육 봉사 활동 (2024.3~)</li>
+        <li onclick="showDetails('activity9')">마이캡스톤: 역류성식도염 예방 어플 - UX/UI 및 앱 구현 담당 (2024.3~)</li>
+      </ol>
+    </div>
+    <div class="details" id="details">
+      <!-- 클릭된 항목의 세부 사항이 여기에 표시됩니다. -->
+    </div>
+  </div>
+  <div class="empty2"></div>
+  <section id="guest_book" class="container">
+    <h2>📖방명록📖</h2>
+    <br>
+    <form name="f" method="post" id="guestbook-form">
+      <table id="t1">
+        <tr>
+          <th><label for="writer">작성자</label></th>
+          <td class="guest_form"><input class="todo-name-input" type="text" name="writer" id="writer"
+              placeholder="Add name"></td>
+        </tr>
+        <tr>
+          <th><label for="content">내용</label></th>
+          <td class="guest_form"><input class="todo-input" type="text" name="content" id="content"
+              placeholder="Add context"></td>
+        </tr>
+
+      </table>
+    </form>
+    <br>
+    <div id="list"></div>
+    <div class="guestbooks-container todos-container">
+
+    </div>
+  </section>
+  <footer id="comments" class="foilofooter">
+    <ul>
+      <li>
+        <p>@ OpenSourceSoftware 2024 Final Project 2021204093 Cheon Seong Yun</p>
+      </li>
+      <li>
+        <a href="mailto:1112csy@naver.com" target="_top">
+          <address>Mail : 1112csy@naver.com</address>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/lucha__01/" target="_top">
+          <address>instagram : lucha__01</address>
+        </a>
+      </li>
+    </ul>
+
+  </footer>
+</body>
+
+</html>

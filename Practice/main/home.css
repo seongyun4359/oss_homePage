@@ -1,0 +1,478 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "GmarketBold";
+  src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(240, 240, 229);
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 300;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.rounded-image {
+  border-radius: 20%;
+  border: 3px solid rgb(11, 113, 50);
+  margin: 20px;
+  margin-left: 13%;
+  align-items: center;
+}
+
+.rounded-image:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease;
+}
+
+body {
+  background-color: rgb(133, 171, 128);
+  color: white;
+  font-weight: 200;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+}
+
+header {
+  background-image: url("img/color_blue.png");
+  padding: 0 60px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: #30333b;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.bar-bg {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #dfe2f7;
+}
+
+.bar-ing {
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #527154;
+}
+
+/*사이드 바*/
+.side-bar {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  width: 180px;
+}
+
+.side-bar ul {
+  list-style-type: none;
+  text-align: center;
+  /* 가운데 정렬 */
+  padding: 0;
+  /* 기본 패딩 제거 */
+}
+
+.side-bar-item a {
+  text-decoration: none;
+  color: #30333b;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  /* 가운데 정렬 */
+}
+
+
+.side-bar-item a {
+  text-decoration: none;
+  color: #414040;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.bookmark i {
+  font-size: 40px;
+  color: #c2c2c2;
+  position: relative;
+  right: -120px;
+}
+
+.side-bar-item {
+  margin-bottom: 15px;
+}
+
+.uptext {
+  width: 1000px;
+  min-height: 90px;
+  margin-top: 80px;
+  margin-left: 15%;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "GmarketBold";
+  color: #e6e6e6;
+  line-height: 80px;
+}
+
+/*Seongyun introduction 글씨 크기*/
+.logo {
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #000000;
+}
+
+nav {
+  text-align: right;
+  width: 600px;
+  transform: translateX(-35px);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0 5px;
+}
+
+/*마우스 올라가면 색 변하기*/
+nav ul li a:hover {
+  font-weight: 900;
+  color: #b8efce;
+  transition: 0.2s;
+}
+
+section {
+  width: 100%;
+  max-width: 1300px;
+}
+
+/* home */
+.home__text {
+  width: 100%;
+  text-align: center;
+  cursor: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.home__text p {
+  margin-bottom: 17px;
+  font-size: 18px;
+  color: #30333b;
+}
+
+.home__text p:last-child {
+  margin: 0;
+}
+
+.home__text p span {
+  background-color: #3c5540;
+  padding: 0 3px;
+  font-weight: 500;
+}
+
+.home__text p span:hover {
+  color: #ddf4d8;
+  background-color: inherit;
+}
+
+.empty1 {
+  margin: 500px;
+}
+
+/*성격에 관한 부분들*/
+.mymbti {
+  text-align: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.mymbti div p b {
+  font-weight: 500;
+}
+
+.mycharacter_text {
+  font-size: 44px;
+}
+
+.mbti-image1,
+.mbti-image2 {
+  border: solid gray 2px;
+  border-radius: 5%;
+  border-style: inset;
+}
+
+.empty2 {
+  margin: 500px;
+}
+
+/*좋아하는 것들에 관한 부분들*/
+.myfavorites {
+  text-align: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.myfavorites li {
+  list-style: none;
+}
+
+.empty3 {
+  margin: 500px;
+}
+
+/*룰렛*/
+.bingle.canvas {
+  transition: 2s;
+}
+
+.bingle.button {
+  background: #febf00;
+  color: #000;
+  margin-top: 1rem;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.bingle.button:active {
+  background: #444;
+  color: #000000;
+}
+
+.bingle.div {
+  width: 380px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bingle.div::before {
+  content: "";
+  width: 10px;
+  height: 50px;
+  border-radius: 5px;
+  background: #000;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.randombotton {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.homefooter {
+  background-color: rgb(209, 174, 129);
+  width: 100%;
+  border-top: solid #968229 3px;
+  margin-top: 50px;
+  border-radius: 5%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.homefooter li {
+  list-style: none;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 1200px) {
+  header {
+    padding: 0 30px;
+  }
+
+  .uptext {
+    font-size: 40px;
+    margin-left: 5%;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    font-size: 18px;
+  }
+
+  .side-bar {
+    width: 150px;
+  }
+
+  .rounded-image {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 0 20px;
+  }
+
+  .uptext {
+    font-size: 35px;
+    margin-left: 5%;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .side-bar {
+    width: 120px;
+    padding: 10px;
+  }
+
+  .side-bar-item a {
+    font-size: 14px;
+  }
+
+  .rounded-image {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 10px;
+  }
+
+  .uptext {
+    font-size: 30px;
+    margin-left: 5%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .side-bar {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    left: 0;
+  }
+
+  .side-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .side-bar-item {
+    margin-bottom: 0;
+  }
+
+  .rounded-image {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .home__text {
+    margin-bottom: 50px;
+  }
+
+  .home__text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 0 5px;
+  }
+
+  .uptext {
+    font-size: 25px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav ul {
+    font-size: 14px;
+  }
+
+  .side-bar {
+    width: 100%;
+    padding: 5px;
+    box-shadow: none;
+  }
+
+  .side-bar ul {
+    flex-direction: column;
+  }
+
+  .side-bar-item a {
+    font-size: 12px;
+  }
+
+  .rounded-image {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .home__text p {
+    font-size: 14px;
+  }
+}
