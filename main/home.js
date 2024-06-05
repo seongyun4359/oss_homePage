@@ -103,7 +103,7 @@ const rotate = () => {
     $c.style.transform = `rotate(-${rotate}deg)`;
     $c.style.transition = `2s`;
 
-    setTimeout(() => alert(`제가 추천하는 메뉴는?! ${product[ran]} 어떠신가요?`), 2500);
+    setTimeout(() => alert(`학부생 천성윤의 추천 메뉴?! ${product[ran]} 어떠신가요?`), 2500);
   }, 1);
 };
 
